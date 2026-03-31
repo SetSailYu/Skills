@@ -1,0 +1,9 @@
+# API Surface
+
+## 已确认
+- `services/api/src/controllers/UserController.ts`
+  - `GET /api/users/:id`
+  - 证据：router 命中行 12-20
+
+## 需验证
+- 是否存在批量查询接口

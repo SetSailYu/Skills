@@ -1,0 +1,8 @@
+{
+  "languages": ["TypeScript", ".NET"],
+  "frontend": ["Next.js"],
+  "backend": [".NET 8"],
+  "datastores": ["PostgreSQL", "Redis"],
+  "messaging": ["Kafka"],
+  "deployment": ["Docker", "Kubernetes"]
+}

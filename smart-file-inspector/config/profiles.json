@@ -1,0 +1,72 @@
+{
+  "defaults": {
+    "maxOutputLines": 180,
+    "maxOutputChars": 20000,
+    "windowBefore": 60,
+    "windowAfter": 60,
+    "maxMatches": 30,
+    "maxSampleBytes": 65536,
+    "autoQueryTopK": 12
+  },
+  "profiles": {
+    "log": {
+      "strategy": "log",
+      "seed": [
+        "error",
+        "warn",
+        "exception",
+        "timeout",
+        "status",
+        "code",
+        "cookie"
+      ],
+      "windowBefore": 80,
+      "windowAfter": 80
+    },
+    "code": {
+      "strategy": "code",
+      "seed": [
+        "TODO",
+        "FIXME",
+        "throw",
+        "catch",
+        "http",
+        "serialize",
+        "deserialize"
+      ],
+      "windowBefore": 40,
+      "windowAfter": 90
+    },
+    "markdown": {
+      "strategy": "markdown",
+      "seed": [
+        "##",
+        "TODO",
+        "NOTE",
+        "约束",
+        "阶段",
+        "关键文件"
+      ],
+      "windowBefore": 20,
+      "windowAfter": 80
+    },
+    "httptrace": {
+      "strategy": "httptrace",
+      "seed": [
+        "GET ",
+        "POST ",
+        "HTTP",
+        "Host:",
+        "Cookie:",
+        "Set-Cookie:"
+      ],
+      "windowBefore": 30,
+      "windowAfter": 120
+    },
+    "binary": {
+      "strategy": "binary",
+      "seed": [],
+      "maxSampleBytes": 65536
+    }
+  }
+}

@@ -1,0 +1,20 @@
+# 放入 ~/.codex/config.toml 或项目内 .codex/config.toml（trusted project）
+# 仅示例：按你的实际配置裁剪
+
+[mcp_servers.code-index]
+command = "uvx"
+args = ["code-index-mcp"]
+
+[mcp_servers.architecture-analyzer]
+command = "npx"
+args = ["-y", "@j0kz/architecture-analyzer-mcp"]
+
+[mcp_servers.repomix]
+command = "repomix"
+args = ["--mcp"]
+
+[mcp_servers.context7]
+url = "https://mcp.context7.com/mcp"
+
+[mcp_servers.doc-generator]
+command = "doc-generator-mcp"

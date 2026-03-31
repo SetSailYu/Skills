@@ -1,0 +1,6 @@
+# Repo Map
+
+- `apps/web`：前端应用
+- `services/api`：后端 API
+- `packages/shared`：共享包
+- `infra/k8s`：Kubernetes 部署
